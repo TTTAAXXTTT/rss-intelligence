@@ -1,0 +1,34 @@
+id	category	topic
+S_CHAIN_01	S-链上金融	Stablecoin issuers reserves settlement infrastructure official research
+S_CHAIN_02	S-链上金融	RWA tokenization securities funds treasuries official infrastructure
+S_CHAIN_03	S-链上金融	on-chain finance custody institutional DeFi tokenized deposits infrastructure
+S_CHAIN_04	S-链上金融	stablecoin payments settlement compliance data official protocols
+S_XB_01	S-跨境金融	cross-border payments remittance payment rails official companies regulators
+S_XB_02	S-跨境金融	digital banks global accounts multi-currency accounts fintech official
+S_XB_03	S-跨境金融	payment infrastructure acquiring issuing banking-as-a-service official
+S_XB_04	S-跨境金融	regional payment networks Asia Europe LatAm Africa Middle East official
+S_BIZ_01	S-商业机会	Micro SaaS indie hacking one-person company revenue case studies original
+S_BIZ_02	S-商业机会	small niche B2B software bootstrapped business opportunities original founders
+S_BIZ_03	S-商业机会	global new business models creator tools API businesses small teams
+S_BIZ_04	S-商业机会	independent developers productized services automation businesses original
+A_AGENT_01	A-AI-Agent	AI agents agent platforms official product engineering releases
+A_AGENT_02	A-AI-Agent	agent protocols MCP interoperability official engineering
+A_AGENT_03	A-AI-Agent	enterprise agents automation official case studies infrastructure
+A_AGENT_04	A-AI-Agent	foundation model labs LLM ecosystem official research product releases developer platforms
+A_TOOL_01	A-AI工具自动化	AI automation productivity tools official changelog
+A_TOOL_02	A-AI工具自动化	coding agents developer tools official releases engineering blogs
+A_TOOL_03	A-AI工具自动化	OpenClaw ecosystem automation self-hosted agent tools
+A_WX_01	A-微信企微私域	微信 企业微信 私域 官方 更新 开放平台 开发者
+A_WX_02	A-微信企微私域	WeChat Work WeCom private domain ecosystem official updates
+A_XCP_01	A-AIxCryptoPayment	AI crypto payment agentic payments stablecoin agents official
+A_XCP_02	A-AIxCryptoPayment	machine payments agent wallets programmable money official
+B_NET_01	B-海外互联网	new internet products official launch changelog product engineering
+B_NET_02	B-海外互联网	Product Hunt alternatives new global products original makers
+B_NET_03	B-海外互联网	developer platforms APIs new products official changelog
+B_SELF_01	B-开源自托管	self-hosted Docker HomeLab open source official releases
+B_SELF_02	B-开源自托管	VPS infrastructure self-hosted tools official engineering releases
+B_POLICY_01	B-政策监管	stablecoin crypto regulation regulators official
+B_POLICY_02	B-政策监管	AI regulation technology policy government official
+B_POLICY_03	B-政策监管	fintech payments digital banking regulation official global
+C_MACRO_01	C-宏观流动性	official central banks BIS IMF treasury interest rates USD liquidity macro conditions
+C_CONSUMER_01	C-消费科技	official consumer technology platform hardware product releases major vendors
