@@ -1,0 +1,44 @@
+{
+  "id": "rss-curator",
+  "name": "RSS Curator",
+  "version": "1.0.0",
+  "description": "Read FreshRSS and store local reports or pending reviews. Never changes subscriptions.",
+  "configSchema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "freshrss_list_subscriptions",
+      "freshrss_recent_articles",
+      "rss_report_save",
+      "rss_report_get_latest",
+      "rss_review_save",
+      "rss_review_get_pending"
+    ]
+  },
+  "toolMetadata": {
+    "freshrss_list_subscriptions": {
+      "optional": true
+    },
+    "freshrss_recent_articles": {
+      "optional": true
+    },
+    "rss_report_save": {
+      "optional": true
+    },
+    "rss_report_get_latest": {
+      "optional": true
+    },
+    "rss_review_save": {
+      "optional": true
+    },
+    "rss_review_get_pending": {
+      "optional": true
+    }
+  }
+}
