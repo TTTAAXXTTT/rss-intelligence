@@ -1,0 +1,26 @@
+name: Linux pipeline regression
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.20.0'
+      - run: python -m pip install -r requirements.txt
+      - run: npm ci --ignore-scripts --prefix 02-rss-intelligence-stage
+      - run: npm run build --prefix 02-rss-intelligence-stage && npm test --prefix 02-rss-intelligence-stage
+      - run: npm ci --ignore-scripts --prefix 08-rss-curator
+      - run: npm run build --prefix 08-rss-curator && npm test --prefix 08-rss-curator
+      - name: Complete package regression
+        run: |
+          RSS_TYPESCRIPT_LIB="$PWD/02-rss-intelligence-stage/node_modules/typescript/lib/typescript.js" RSS_V53_PYTHON_BIN="$(command -v python)" bash 00-preflight/package-selftest.sh "$PWD"
+      - run: python tools/check_publication.py
