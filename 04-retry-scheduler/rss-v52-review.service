@@ -1,0 +1,7 @@
+[Unit]
+Description=RSS V5.2 semi-monthly source review with fixed retry
+After=openclaw-gateway.service
+[Service]
+Type=oneshot
+ExecStart=/home/ubuntu/.local/bin/rss-v52-review-retry-runner.sh
+TimeoutStartSec=165min

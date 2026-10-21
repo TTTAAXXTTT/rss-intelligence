@@ -1,0 +1,7 @@
+[Unit]
+Description=RSS V5.2 Morning intelligence with immutable snapshot, bootstrap quarantine and true-failure retry
+After=openclaw-gateway.service rss-v52-freshrss-fetch.service
+[Service]
+Type=oneshot
+ExecStart=/home/ubuntu/.local/bin/rss-v52-daily-retry-runner.sh morning
+TimeoutStartSec=360min

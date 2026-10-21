@@ -1,0 +1,12 @@
+[Unit]
+Description=RSS daily catch-up (%i)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+Environment=TZ=Asia/Shanghai
+ExecStart=/home/ubuntu/rss-intelligence-v5.2/04-daily-pipeline/rss-v53-daily-catchup.sh %i
+TimeoutStartSec=4h
+UMask=0077
+

@@ -1,0 +1,7 @@
+[Unit]
+Description=RSS V5.2 Afternoon intelligence with immutable snapshot and Morning baseline
+After=openclaw-gateway.service rss-v52-freshrss-fetch.service
+[Service]
+Type=oneshot
+ExecStart=/home/ubuntu/.local/bin/rss-v52-daily-retry-runner.sh afternoon
+TimeoutStartSec=360min

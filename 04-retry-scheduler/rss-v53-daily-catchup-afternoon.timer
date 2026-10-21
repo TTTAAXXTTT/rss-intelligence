@@ -1,0 +1,13 @@
+[Unit]
+Description=Check and catch up the afternoon report at 14:30 Asia/Shanghai
+
+[Timer]
+OnCalendar=*-*-* 14:30:00 Asia/Shanghai
+AccuracySec=1min
+RandomizedDelaySec=0
+Persistent=true
+Unit=rss-v53-daily-catchup@afternoon.service
+
+[Install]
+WantedBy=timers.target
+

@@ -1,0 +1,13 @@
+[Unit]
+Description=Check all sources after each FreshRSS refresh
+
+[Timer]
+OnCalendar=*-*-* 07:03:00 Asia/Shanghai
+OnCalendar=*-*-* 13:03:00 Asia/Shanghai
+Persistent=false
+AccuracySec=1s
+RandomizedDelaySec=0
+Unit=rss-v53-source-health.service
+
+[Install]
+WantedBy=timers.target

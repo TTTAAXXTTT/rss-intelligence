@@ -1,0 +1,12 @@
+[Unit]
+Description=Enforce translated reading-page expiry every minute
+
+[Timer]
+OnCalendar=*-*-* *:*:00 Asia/Shanghai
+Persistent=true
+AccuracySec=1s
+RandomizedDelaySec=0
+Unit=rss-v53-translation-cleanup.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=Check and catch up the morning report at 08:30 Asia/Shanghai
+
+[Timer]
+OnCalendar=*-*-* 08:30:00 Asia/Shanghai
+AccuracySec=1min
+RandomizedDelaySec=0
+Persistent=true
+Unit=rss-v53-daily-catchup@morning.service
+
+[Install]
+WantedBy=timers.target
+

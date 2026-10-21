@@ -1,0 +1,7 @@
+[Unit]
+Description=RSS V5.2 FreshRSS actualize with source-dataset lock and fixed retry
+[Service]
+EnvironmentFile=-/home/ubuntu/.openclaw/.env
+Type=oneshot
+ExecStart=/home/ubuntu/.local/bin/rss-v52-freshrss-fetch-retry.sh
+TimeoutStartSec=60min

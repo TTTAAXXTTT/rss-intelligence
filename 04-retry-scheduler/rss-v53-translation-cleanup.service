@@ -1,0 +1,8 @@
+[Unit]
+Description=Remove expired Chinese pages from feeds, then delete the pages
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/ubuntu/rss-intelligence-v5.2/04-daily-pipeline/host-publish.py --reconcile-expired
+ExecStart=/home/ubuntu/.local/share/rss-intelligence-v53-venv/bin/python /home/ubuntu/rss-intelligence-v5.2/04-daily-pipeline/host-translate.py --cleanup-only
+TimeoutStartSec=5min

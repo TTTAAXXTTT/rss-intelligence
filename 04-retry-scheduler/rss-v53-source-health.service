@@ -1,0 +1,8 @@
+[Unit]
+Description=Check every FreshRSS source and publish a private health summary
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/ubuntu/.local/share/rss-intelligence-v53-venv/bin/python /home/ubuntu/rss-intelligence-v5.2/04-daily-pipeline/source-health.py
+TimeoutStartSec=20min

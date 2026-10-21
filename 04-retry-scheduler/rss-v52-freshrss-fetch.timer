@@ -1,0 +1,11 @@
+[Unit]
+Description=RSS V5.2 FreshRSS fetch 07:00 and 13:00 Asia/Shanghai
+[Timer]
+OnCalendar=*-*-* 07:00:00 Asia/Shanghai
+OnCalendar=*-*-* 13:00:00 Asia/Shanghai
+Persistent=false
+AccuracySec=1s
+RandomizedDelaySec=0
+Unit=rss-v52-freshrss-fetch.service
+[Install]
+WantedBy=timers.target
