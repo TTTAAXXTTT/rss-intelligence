@@ -1,0 +1,10 @@
+import { describe,expect,it } from "vitest";
+import { mkdtemp,mkdir,readFile,readdir,rm,writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { saveFinalStage } from "./stage.js";
+
+describe("rss-intelligence-stage-v52",()=>{
+  it("validates exact candidate accounting and never publishes public files",async()=>{const r=await mkdtemp(join(tmpdir(),"rss-stage-v52-"));const c=join(r,"c"),s=join(r,"s");await mkdir(c,{recursive:true});await writeFile(join(c,"morning-candidates.json"),JSON.stringify({schemaVersion:2,edition:"morning",runId:"run-1",allPagesComplete:true,candidates:[{primaryArticleId:"a1"},{primaryArticleId:"a2"}]}));try{const out=await saveFinalStage({edition:"morning",candidateRunId:"run-1",title:"晨报",reportMarkdown:"# 晨报\n完整",accounting:[{primaryArticleId:"a1",disposition:"retained",finalEventKey:"evt1",reason:"保留"},{primaryArticleId:"a2",disposition:"merged",finalEventKey:"evt1",reason:"同事件"}],items:[{eventKey:"evt1",title:"T",priority:"S",category:"S-链上金融",summary:"s",whyImportant:"w",impact:"i",isHighValueOpportunity:false,sources:[{name:"x",url:"https://example.com/a"}]}]},c,s);expect(out.publicPublished).toBe(false);expect((await readdir(join(s,"morning"))).length).toBe(1);const stored=JSON.parse(await readFile(join(s,"morning",out.fileName),"utf8"));expect(stored.schemaVersion).toBe(2);expect(stored.items.length).toBe(1);}finally{await rm(r,{recursive:true,force:true});}});
+  it("rejects missing candidate accounting",async()=>{const r=await mkdtemp(join(tmpdir(),"rss-stage-v52-bad-"));const c=join(r,"c"),s=join(r,"s");await mkdir(c,{recursive:true});await writeFile(join(c,"morning-candidates.json"),JSON.stringify({schemaVersion:2,edition:"morning",runId:"run-2",allPagesComplete:true,candidates:[{primaryArticleId:"a1"}]}));try{await expect(saveFinalStage({edition:"morning",candidateRunId:"run-2",title:"x",reportMarkdown:"x",accounting:[],items:[]},c,s)).rejects.toThrow(/length mismatch/);}finally{await rm(r,{recursive:true,force:true});}});
+});
