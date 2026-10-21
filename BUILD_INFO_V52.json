@@ -1,0 +1,43 @@
+{
+  "package": "rss-intelligence-v5.2",
+  "version": "5.2.0-r4",
+  "buildDate": "2026-08-11",
+  "basis": "V5.1 incident snapshot + real 4000-article replay",
+  "incidentArchiveSha256": "1fedee84bc9f7c90d251f70deb7a24f993e6b5a987b391f344fde711325bf475",
+  "replay": {
+    "raw": 4000,
+    "bootstrapQuarantine": 3623,
+    "normalModelInput": 377,
+    "dynamicBatches": 20,
+    "tail70to100Quarantined": 1240,
+    "afternoonPersistentQuarantine": 3623
+  },
+  "releaseGates": [
+    "immutable snapshot fixture",
+    "pre-model capacity fixture",
+    "dynamic count+char batching fixture",
+    "exact raw accounting fixture",
+    "persistent quarantine + fingerprint rescue fixture",
+    "yield-not-failure fixture",
+    "host publisher + bootstrap commit + watermark smoke",
+    "systemd static verify + calendar",
+    "E2E state/schema static gate",
+    "transactional cutover/rollback static gate",
+    "real 4000-article incident replay",
+    "native plugin generated-metadata static contract gate",
+    "P49 agent-envelope extraction fixtures",
+    "isolated classifier one-batch real probe",
+    "host-derived exact accounting counters",
+    "deterministic Host Finalizer exact-accounting/baseline/cap fixture",
+    "deterministic read-only Host Review fixture",
+    "model-free Finalizer/Review runner boundary gate"
+  ],
+  "releaseRevision": "R4",
+  "hotfixes": [
+    "P45: native OpenClaw plugin manifest declares configSchema",
+    "P46: manifest is treated as defineToolPlugin generated metadata; contracts.tools, activation and optional toolMetadata are present; Stage 2 uses plugin:build + build --check + validate",
+    "P48: batch classification moved to the isolated rss-v52-classifier agent with no workspace access and session_status as its only allowed tool",
+    "P49: authoritative non-empty agent text extraction, strict single fenced-JSON acceptance, Host-derived counters, and defensive schema guards",
+    "P50: deterministic Host Finalizer and read-only Host Review replace unreliable terminal model tool calls while isolated AI classification remains enabled"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "package": "rss-intelligence-v5.4-final",
+  "version": "5.4.0",
+  "buildDate": "2026-08-20",
+  "productionDirectory": "/home/ubuntu/rss-intelligence-v5.2",
+  "upgradeFrom": "5.3.0",
+  "releaseGates": [
+    "translation manifest eventKey set exactly equals final stage eventKey set",
+    "every public translation row is complete, full and not truncated",
+    "partial, limited, failed and empty fallback manifests are rejected",
+    "article feed canonical links remain original source URLs",
+    "every public article item has exactly one live Chinese full-text URL",
+    "every public report contains a full-text URL for every listed item",
+    "48-hour expiry reprojects all four feeds before page deletion",
+    "presentation-only backfill never changes bootstrap, baseline or success watermark",
+    "translation progress is resumable but only exact complete manifests are publishable",
+    "FreshRSS fallback is exact, query-only and rejects truncated snapshots",
+    "XML 1.0, path, owner, mode, hash and timestamp validation"
+  ],
+  "retention": {
+    "publicHours": 48,
+    "replayExtendsExpiry": false,
+    "cleanupInterval": "1 minute",
+    "publicFeedsAreRollingWindow": true
+  }
+}

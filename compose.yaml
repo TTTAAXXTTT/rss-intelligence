@@ -1,0 +1,17 @@
+services:
+  freshrss:
+    image: freshrss/freshrss:1.27.1
+    container_name: freshrss
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8080:80"
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - freshrss_data:/var/www/FreshRSS/data
+      - freshrss_extensions:/var/www/FreshRSS/extensions
+volumes:
+  freshrss_data:
+    name: freshrss_data
+  freshrss_extensions:
+    name: freshrss_extensions
