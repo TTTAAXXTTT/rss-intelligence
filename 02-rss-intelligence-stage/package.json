@@ -1,0 +1,38 @@
+{
+  "name": "openclaw-plugin-rss-intelligence-stage-v52",
+  "version": "0.4.1",
+  "type": "module",
+  "files": [
+    "dist",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "plugin:build": "npm run build && openclaw plugins build --entry ./dist/index.js",
+    "plugin:validate": "npm run build && openclaw plugins build --entry ./dist/index.js --check && openclaw plugins validate --entry ./dist/index.js",
+    "test": "vitest run --config ./vitest.config.ts"
+  },
+  "dependencies": {
+    "typebox": "1.4.2"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.5.17"
+  },
+  "openclaw": {
+    "extensions": [
+      "./dist/index.js"
+    ]
+  },
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.16.0 <25 || >=26.1.0"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "vitest": "3.2.4",
+    "@types/node": "22.18.6",
+    "openclaw": "2026.10.5"
+  }
+}

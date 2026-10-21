@@ -1,0 +1,24 @@
+{
+  "id": "rss-intelligence-stage-v52",
+  "name": "RSS Intelligence Stage V5.2",
+  "description": "Validate and save private V5.2 Morning/Afternoon staging data for host-only publication. Never modifies FreshRSS or public RSS files.",
+  "version": "0.4.1",
+  "configSchema": {
+    "type": "object",
+    "properties": {},
+    "additionalProperties": false
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "rss_daily_finalize_save_v52"
+    ]
+  },
+  "toolMetadata": {
+    "rss_daily_finalize_save_v52": {
+      "optional": true
+    }
+  }
+}
