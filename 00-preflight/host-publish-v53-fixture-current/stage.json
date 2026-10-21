@@ -1,0 +1,1008 @@
+{
+  "schemaVersion": 2,
+  "status": "staged",
+  "stageId": "fixture-stageId",
+  "generator": "host-deterministic-v1",
+  "edition": "morning",
+  "candidateRunId": "morning-fixture-run-001",
+  "generatedAt": "2026-08-15T00:14:27.687957Z",
+  "savedAt": "2026-08-15T00:14:27.687957Z",
+  "title": "合成情报示例 203：公开技术规范更新",
+  "reportMarkdown": "合成测试内容 402。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+  "accounting": [
+    {
+      "primaryArticleId": "fixture-article-0001",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0001",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0002",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0003",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0004",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0004",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0005",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0005",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0006",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0006",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0007",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0008",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0009",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0010",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0011",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0013",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0012",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0015",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0013",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0014",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0019",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0015",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0016",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0023",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0017",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0026",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0018",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0019",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0020",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0021",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0022",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0023",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0024",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0025",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0026",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0027",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0028",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0029",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0030",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0031",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0054",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0032",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0056",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0033",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0034",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0035",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0062",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0036",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0037",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0038",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0039",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0040",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0041",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0042",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0043",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0044",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0045",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0082",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0046",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0084",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0047",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0048",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0049",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0050",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0051",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0052",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0053",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0054",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0055",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0056",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0057",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0058",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0059",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0060",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0061",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0062",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0063",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0064",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0065",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0066",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0067",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0068",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0128",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0069",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0070",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0132",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0071",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0134",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0072",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0136",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0073",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0138",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0074",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0075",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0142",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0076",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0144",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0077",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0078",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0148",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0079",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0150",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0080",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0081",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0082",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0083",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0084",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0085",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0086",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0087",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0088",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0089",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0090",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0091",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0092",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0093",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0094",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0095",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0096",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0097",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0098",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0099",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0100",
+      "disposition": "retained",
+      "finalEventKey": "https://example.test/articles/0192",
+      "reason": "合成测试内容 403。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    },
+    {
+      "primaryArticleId": "fixture-article-0101",
+      "disposition": "filtered",
+      "reason": "合成测试内容 404。用于验证聚合、筛选和中文内容发布，不对应真实事件。"
+    }
+  ],
+  "items": [
+    {
+      "eventKey": "https://example.test/articles/0015",
+      "title": "合成情报示例 023：公开技术规范更新",
+      "priority": "S",
+      "category": "S-商业机会",
+      "summary": "合成测试内容 044。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 045。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 046。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": true,
+      "originalTitle": "合成情报示例 024：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0016"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0134",
+      "title": "合成情报示例 141：公开技术规范更新",
+      "priority": "S",
+      "category": "S-商业机会",
+      "summary": "合成测试内容 289。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 290。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 291。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": true,
+      "publishedAt": "2026-08-13T13:02:39Z",
+      "opportunity": "合成测试内容 292。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "risk": "合成测试内容 293。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 142：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0135"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0084",
+      "title": "合成情报示例 091：公开技术规范更新",
+      "priority": "S",
+      "category": "S-链上金融",
+      "summary": "合成测试内容 177。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 178。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 179。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-13T20:32:19Z",
+      "originalTitle": "合成情报示例 092：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0085"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0150",
+      "title": "合成情报示例 157：公开技术规范更新",
+      "priority": "S",
+      "category": "S-链上金融",
+      "summary": "合成测试内容 320。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 321。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 322。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-13T07:21:00Z",
+      "opportunity": "合成测试内容 323。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 158：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0151"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0026",
+      "title": "合成情报示例 033：公开技术规范更新",
+      "priority": "S",
+      "category": "S-跨境金融",
+      "summary": "合成测试内容 059。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 060。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 061。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "originalTitle": "合成情报示例 034：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0027"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0019",
+      "title": "合成情报示例 027：公开技术规范更新",
+      "priority": "S",
+      "category": "S-链上金融",
+      "summary": "合成测试内容 050。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 051。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 052。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "originalTitle": "合成情报示例 028：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0020"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0001",
+      "title": "合成情报示例 001：公开技术规范更新",
+      "priority": "S",
+      "category": "S-商业机会",
+      "summary": "合成测试内容 001。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 002。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 003。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-14T21:06:22Z",
+      "opportunity": "合成测试内容 004。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "risk": "合成测试内容 005。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 002：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0001"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0136",
+      "title": "合成情报示例 143：公开技术规范更新",
+      "priority": "S",
+      "category": "S-商业机会",
+      "summary": "合成测试内容 294。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 295。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 296。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-13T12:20:18Z",
+      "opportunity": "合成测试内容 297。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "risk": "合成测试内容 298。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 144：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0137"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0138",
+      "title": "合成情报示例 145：公开技术规范更新",
+      "priority": "S",
+      "category": "S-商业机会",
+      "summary": "合成测试内容 299。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 300。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 301。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-13T12:09:48Z",
+      "opportunity": "合成测试内容 302。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 146：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0139"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0082",
+      "title": "合成情报示例 089：公开技术规范更新",
+      "priority": "S",
+      "category": "S-跨境金融",
+      "summary": "合成测试内容 174。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 175。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 176。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-13T04:00:00Z",
+      "originalTitle": "合成情报示例 090：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0083"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0132",
+      "title": "合成情报示例 139：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 284。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 285。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 286。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": true,
+      "publishedAt": "2026-08-13T13:57:47Z",
+      "opportunity": "合成测试内容 287。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "risk": "合成测试内容 288。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 140：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0133"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0056",
+      "title": "合成情报示例 063：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 124。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 125。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 126。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": true,
+      "publishedAt": "2026-08-13T00:00:00Z",
+      "opportunity": "合成测试内容 127。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "risk": "合成测试内容 128。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 064：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0057"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0054",
+      "title": "合成情报示例 061：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 119。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 120。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 121。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": true,
+      "publishedAt": "2026-08-13T00:00:00Z",
+      "opportunity": "合成测试内容 122。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "risk": "合成测试内容 123。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 062：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0055"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0062",
+      "title": "合成情报示例 069：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 139。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 140。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 141。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": true,
+      "publishedAt": "2026-08-12T00:00:00Z",
+      "opportunity": "合成测试内容 142。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "risk": "合成测试内容 143。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 070：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0063"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0128",
+      "title": "合成情报示例 135：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI工具自动化",
+      "summary": "合成测试内容 274。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 275。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 276。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-13T14:00:53Z",
+      "opportunity": "合成测试内容 277。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "risk": "合成测试内容 278。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 136：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0129"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0142",
+      "title": "合成情报示例 149：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 306。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 307。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 308。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-13T11:00:00Z",
+      "opportunity": "合成测试内容 309。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 150：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0143"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0144",
+      "title": "合成情报示例 151：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 310。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 311。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 312。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-13T10:00:00Z",
+      "opportunity": "合成测试内容 313。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 152：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0145"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0148",
+      "title": "合成情报示例 155：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 317。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 318。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 319。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-13T09:00:00Z",
+      "originalTitle": "合成情报示例 156：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0149"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0192",
+      "title": "合成情报示例 199：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 396。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 397。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 398。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "originalTitle": "合成情报示例 200：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0193"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0013",
+      "title": "合成情报示例 021：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI工具自动化",
+      "summary": "合成测试内容 041。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 042。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 043。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "originalTitle": "合成情报示例 022：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0014"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0023",
+      "title": "合成情报示例 031：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI工具自动化",
+      "summary": "合成测试内容 056。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 057。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 058。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "originalTitle": "合成情报示例 032：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0024"
+        },
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0025"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0004",
+      "title": "合成情报示例 007：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 014。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 015。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 016。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-14T19:34:47Z",
+      "opportunity": "合成测试内容 017。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "risk": "合成测试内容 018。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 008：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0004"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0005",
+      "title": "合成情报示例 009：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 019。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 020。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 021。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-14T19:28:17Z",
+      "risk": "合成测试内容 022。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 010：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0005"
+        }
+      ]
+    },
+    {
+      "eventKey": "https://example.test/articles/0006",
+      "title": "合成情报示例 011：公开技术规范更新",
+      "priority": "A",
+      "category": "A-AI-Agent",
+      "summary": "合成测试内容 023。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "whyImportant": "合成测试内容 024。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "impact": "合成测试内容 025。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "isHighValueOpportunity": false,
+      "publishedAt": "2026-08-14T19:25:14Z",
+      "risk": "合成测试内容 026。用于验证聚合、筛选和中文内容发布，不对应真实事件。",
+      "originalTitle": "合成情报示例 012：公开技术规范更新",
+      "sources": [
+        {
+          "name": "合成来源",
+          "url": "https://example.test/articles/0006"
+        }
+      ]
+    }
+  ],
+  "candidateSha256": "0630591fa3a0578ec13918abfb2565ffb5acedf20f95dd3374524ef0b251a42f",
+  "baselineSha256": "none",
+  "selectionStats": {
+    "preliminaryCandidates": 101,
+    "retained": 24,
+    "merged": 0,
+    "filtered": 77,
+    "cap": 24
+  }
+}
