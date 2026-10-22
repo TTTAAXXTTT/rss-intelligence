@@ -1,5 +1,11 @@
 # RSS 情报站 · RSS Intelligence
 
+## 下载已构建运行包
+
+**[下载 Linux amd64 运行包 v5.4.0](https://github.com/TTTAAXXTTT/rss-intelligence/releases/download/v5.4.0/rss-intelligence-Linux-amd64-v5.4.0.tar)** · [校验与发布说明](https://github.com/TTTAAXXTTT/rss-intelligence/releases/tag/v5.4.0)
+
+包含预构建容器镜像、Python/Node/OpenClaw、已编译插件和 FreshRSS。解压后运行 `bash rss-runtime.sh load`，再执行 `bash rss-runtime.sh selftest`；无需编译或安装应用依赖。需要 Linux amd64 与 Docker；真实订阅、模型账户、域名和调度仍按部署说明配置。
+
 **RSS 常被忽略，但分散在其中的重要信息值得持续关注。** 官方公告、研究机构更新、开源项目发布、独立作者的深入分析，往往散落在不同网站。只依赖信息流中的热门内容，容易错过持续更新的小众来源。本项目希望把这些来源变成一个可长期维护、可核对原文的个人情报入口。
 
 RSS 的价值在于：你主动选择值得跟踪的来源，持续接收更新，并保留通往原文的链接。一个变化在成为热门话题之前，可能已经出现在项目发布记录、监管公告或研究博客中。这里的“情报”指公开信息的收集与整理，不意味着独家消息、完整覆盖或收益保证。
