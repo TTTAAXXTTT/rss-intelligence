@@ -2,7 +2,7 @@
 
 ## 下载已构建运行包
 
-**[下载 Linux amd64 运行包 v5.4.0](https://github.com/TTTAAXXTTT/rss-intelligence/releases/download/v5.4.0/rss-intelligence-Linux-amd64-v5.4.0.tar)** · [校验与发布说明](https://github.com/TTTAAXXTTT/rss-intelligence/releases/tag/v5.4.0)
+**[下载 Linux amd64 运行包 v5.4.1](https://github.com/TTTAAXXTTT/rss-intelligence/releases/download/v5.4.1/rss-intelligence-Linux-amd64-v5.4.1.tar)** · [校验与发布说明](https://github.com/TTTAAXXTTT/rss-intelligence/releases/tag/v5.4.1)
 
 包含预构建容器镜像、Python/Node/OpenClaw、已编译插件和 FreshRSS。解压后运行 `bash rss-runtime.sh load`，再执行 `bash rss-runtime.sh selftest`；无需编译或安装应用依赖。需要 Linux amd64 与 Docker；真实订阅、模型账户、域名和调度仍按部署说明配置。
 
