@@ -1161,7 +1161,27 @@ main{{max-width:1500px;margin:0 auto;padding:28px}}h1{{margin:0 0 4px;font-size:
 {error_html}<div class="cards">{cards_html}</div>
 <div class="table"><table><thead><tr><th>来源</th><th>状态</th><th>单次直连</th><th>FreshRSS</th><th>最新内容</th><th>判定</th></tr></thead><tbody>{''.join(rows)}</tbody></table></div>
 <p class="note">判定原则：单次上游错误先观察，连续 {int(report["policy"].get("freshRssErrorConfirmations", 3))} 轮才升级为故障；直连失败但 FreshRSS 缓存正常时不自动停用；内容陈旧与抓取故障分开统计。本程序不会修改订阅。</p>
-</main></body></html>"""
+<footer class="author-signature"><button id="authorSignature" type="button" aria-haspopup="dialog">作者QQ：230154231</button></footer>
+<dialog id="authorDialog" class="author-dialog" aria-labelledby="authorText">
+  <p id="authorText">作者QQ：230154231</p>
+  <form method="dialog"><button autofocus>关闭</button></form>
+</dialog>
+<style>
+.author-signature{{display:block;text-align:center;padding:16px;margin:8px auto;color:inherit}}
+.author-signature button{{font:inherit;color:inherit;background:transparent;border:0;cursor:pointer;padding:6px 10px;text-decoration:underline;text-underline-offset:4px}}
+dialog.author-dialog{{position:fixed;inset:0;margin:auto;box-sizing:border-box;width:min(360px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:28px;border:1px solid #cbd5e1;border-radius:16px;background:#fff;color:#17221e;box-shadow:0 24px 80px #0004;text-align:center}}
+dialog.author-dialog::backdrop{{background:rgba(15,23,42,.45)}}
+dialog.author-dialog p{{font-size:20px;font-weight:600;line-height:1.6;margin:0 0 24px;color:inherit}}
+dialog.author-dialog button{{font:inherit;cursor:pointer;border:0;border-radius:8px;padding:10px 28px;background:#2563eb;color:white}}
+</style><script>
+// Keep attribution separate from application actions and data requests.
+(() => {{
+  const dialog = document.getElementById('authorDialog');
+  const signature = document.getElementById('authorSignature');
+  signature.addEventListener('click', () => dialog.showModal());
+  dialog.showModal();
+}})();
+</script></main></body></html>"""
 
 
 def output_paths(config):

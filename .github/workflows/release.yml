@@ -31,9 +31,9 @@ jobs:
           (context/'source.tar').unlink()
           (context/'Dockerfile').write_text('FROM node:24.20.0-bookworm-slim AS node\nFROM python:3.12-slim-bookworm\nCOPY --from=node /usr/local/bin/node /usr/local/bin/node\nCOPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules\nRUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm && ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx\nRUN apt-get update && apt-get install -y --no-install-recommends bash jq curl unzip ca-certificates util-linux git systemd && rm -rf /var/lib/apt/lists/*\nENV HOME=/home/ubuntu PYTHONUTF8=1 PYTHONDONTWRITEBYTECODE=1\nWORKDIR /home/ubuntu/rss-intelligence-v5.2\nCOPY app/ ./\nRUN python -m pip install --no-cache-dir -r requirements.txt\nRUN npm ci --ignore-scripts --prefix 02-rss-intelligence-stage && npm run build --prefix 02-rss-intelligence-stage && npm test --prefix 02-rss-intelligence-stage\nRUN npm ci --ignore-scripts --prefix 08-rss-curator && npm run build --prefix 08-rss-curator && npm test --prefix 08-rss-curator\nRUN RSS_TYPESCRIPT_LIB="$PWD/02-rss-intelligence-stage/node_modules/typescript/lib/typescript.js" RSS_V53_PYTHON_BIN="$(command -v python)" bash 00-preflight/package-selftest.sh "$PWD"\nRUN ln -s /home/ubuntu/rss-intelligence-v5.2/02-rss-intelligence-stage/node_modules/.bin/openclaw /usr/local/bin/openclaw && openclaw --version\nRUN python -m compileall -q 04-daily-pipeline tools 08-rss-curator\nCOPY rss-entry /usr/local/bin/rss-entry\nRUN chmod +x /usr/local/bin/rss-entry && mkdir -p /home/ubuntu/.openclaw /var/www/rss-intelligence\nENTRYPOINT ["/usr/local/bin/rss-entry"]\nCMD ["selftest"]\n')
           (context/'rss-entry').write_text('#!/bin/bash\nset -euo pipefail\ncd /home/ubuntu/rss-intelligence-v5.2\ncase "${1:-selftest}" in\n  selftest) exec python tools/run_fixtures.py ;;\n  shell) shift; exec bash "$@" ;;\n  openclaw) shift; exec openclaw "$@" ;;\n  python) shift; exec python "$@" ;;\n  *) exec "$@" ;;\nesac\n')
-          out=root/'release'/'rss-intelligence-Linux-amd64-v5.4.0';out.mkdir(parents=True)
+          out=root/'release'/'rss-intelligence-Linux-amd64-v5.4.1';out.mkdir(parents=True)
           (out/'rss-runtime.sh').write_text('#!/bin/bash\nset -euo pipefail\ncd -- "$(dirname -- "$0")"\nmkdir -p state published\nif [ "${1:-}" = load ]; then\n  gzip -dc rss-intelligence-images.tar.gz | docker load\n  exit\nfi\nif [ $# -eq 0 ]; then set -- selftest; fi\ndocker run --rm -it --name rss-intelligence-runtime -v "$PWD/state:/home/ubuntu/.openclaw" -v "$PWD/published:/var/www/rss-intelligence" rss-intelligence:5.4.0 "$@"\n');(out/'rss-runtime.sh').chmod(0o755)
-          (out/'使用说明.md').write_text('# RSS 情报站 v5.4.0 · Linux amd64 已构建运行包\n\n包含已构建的 Docker 镜像（Python、Node、依赖、OpenClaw、两个编译后的插件及完整管线），以及固定版本 FreshRSS 镜像。无需在服务器编译或安装 Python/npm 依赖。需要 Linux amd64 和 Docker；本包不作为 Windows 桌面 EXE。\n\n1. 完整解压；执行 `bash rss-runtime.sh load` 导入两个镜像。\n2. 执行 `bash rss-runtime.sh selftest`，使用合成数据离线核验管线。\n3. 执行 `docker compose up -d freshrss`，打开服务器本机的 http://127.0.0.1:8080 初始化 FreshRSS。\n4. 执行 `bash rss-runtime.sh openclaw --help` 使用包内 OpenClaw；`bash rss-runtime.sh shell` 进入完整运行环境，`bash rss-runtime.sh python <脚本路径> <参数>` 执行管线工具。\n\n真实生产使用仍需要自己的订阅、模型权限、FreshRSS 账号、域名/TLS，并按随包 DEPLOYMENT.md 配置与验收。宿主机 Apache、systemd 及原有定时调度按部署文档安装；本容器提供已构建运行环境，不会自动改动宿主服务、安装定时器或挂载 Docker socket。不要把本包的自检通过当作真实模型、订阅或域名已配置完成。\n\n`state/` 和 `published/` 是本次安装的数据目录，请保护其中的凭据与私有发布路径。两个插件的 npm 包在 `plugins/` 中，可在现有 OpenClaw 上直接安装。`sources/` 提供对应项目源码及完整部署文档；Dockerfile 和构建记录用于复现本镜像。\n',encoding='utf-8')
+          (out/'使用说明.md').write_text('# RSS 情报站 v5.4.1 · Linux amd64 已构建运行包\n\n包含已构建的 Docker 镜像（Python、Node、依赖、OpenClaw、两个编译后的插件及完整管线），以及固定版本 FreshRSS 镜像。无需在服务器编译或安装 Python/npm 依赖。需要 Linux amd64 和 Docker；本包不作为 Windows 桌面 EXE。\n\n1. 完整解压；执行 `bash rss-runtime.sh load` 导入两个镜像。\n2. 执行 `bash rss-runtime.sh selftest`，使用合成数据离线核验管线。\n3. 执行 `docker compose up -d freshrss`，打开服务器本机的 http://127.0.0.1:8080 初始化 FreshRSS。\n4. 执行 `bash rss-runtime.sh openclaw --help` 使用包内 OpenClaw；`bash rss-runtime.sh shell` 进入完整运行环境，`bash rss-runtime.sh python <脚本路径> <参数>` 执行管线工具。\n\n真实生产使用仍需要自己的订阅、模型权限、FreshRSS 账号、域名/TLS，并按随包 DEPLOYMENT.md 配置与验收。宿主机 Apache、systemd 及原有定时调度按部署文档安装；本容器提供已构建运行环境，不会自动改动宿主服务、安装定时器或挂载 Docker socket。不要把本包的自检通过当作真实模型、订阅或域名已配置完成。\n\n`state/` 和 `published/` 是本次安装的数据目录，请保护其中的凭据与私有发布路径。两个插件的 npm 包在 `plugins/` 中，可在现有 OpenClaw 上直接安装。`sources/` 提供对应项目源码及完整部署文档；Dockerfile 和构建记录用于复现本镜像。\n',encoding='utf-8')
           (out/'Dockerfile').write_text('FROM node:24.20.0-bookworm-slim AS node\nFROM python:3.12-slim-bookworm\nCOPY --from=node /usr/local/bin/node /usr/local/bin/node\nCOPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules\nRUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm && ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx\nRUN apt-get update && apt-get install -y --no-install-recommends bash jq curl unzip ca-certificates util-linux git systemd && rm -rf /var/lib/apt/lists/*\nENV HOME=/home/ubuntu PYTHONUTF8=1 PYTHONDONTWRITEBYTECODE=1\nWORKDIR /home/ubuntu/rss-intelligence-v5.2\nCOPY app/ ./\nRUN python -m pip install --no-cache-dir -r requirements.txt\nRUN npm ci --ignore-scripts --prefix 02-rss-intelligence-stage && npm run build --prefix 02-rss-intelligence-stage && npm test --prefix 02-rss-intelligence-stage\nRUN npm ci --ignore-scripts --prefix 08-rss-curator && npm run build --prefix 08-rss-curator && npm test --prefix 08-rss-curator\nRUN RSS_TYPESCRIPT_LIB="$PWD/02-rss-intelligence-stage/node_modules/typescript/lib/typescript.js" RSS_V53_PYTHON_BIN="$(command -v python)" bash 00-preflight/package-selftest.sh "$PWD"\nRUN ln -s /home/ubuntu/rss-intelligence-v5.2/02-rss-intelligence-stage/node_modules/.bin/openclaw /usr/local/bin/openclaw && openclaw --version\nRUN python -m compileall -q 04-daily-pipeline tools 08-rss-curator\nCOPY rss-entry /usr/local/bin/rss-entry\nRUN chmod +x /usr/local/bin/rss-entry && mkdir -p /home/ubuntu/.openclaw /var/www/rss-intelligence\nENTRYPOINT ["/usr/local/bin/rss-entry"]\nCMD ["selftest"]\n')
           (out/'BUILD-INFO.json').write_text(json.dumps({'repository':os.environ['GITHUB_REPOSITORY'],'commit':os.environ['GITHUB_SHA'],'architecture':'linux/amd64'},indent=2))
           PY
@@ -45,34 +45,34 @@ jobs:
           set -euo pipefail
           docker run --rm rss-intelligence:5.4.0 selftest
           docker run --rm rss-intelligence:5.4.0 openclaw --version
-          mkdir -p release/rss-intelligence-Linux-amd64-v5.4.0/plugins
+          mkdir -p release/rss-intelligence-Linux-amd64-v5.4.1/plugins
           docker run --name rss-package rss-intelligence:5.4.0 shell -c 'cd 02-rss-intelligence-stage && npm pack --ignore-scripts --pack-destination /tmp; cd ../08-rss-curator && npm pack --ignore-scripts --pack-destination /tmp'
-          docker cp rss-package:/tmp/. release/rss-intelligence-Linux-amd64-v5.4.0/plugins/
+          docker cp rss-package:/tmp/. release/rss-intelligence-Linux-amd64-v5.4.1/plugins/
           docker rm rss-package
-          find release/rss-intelligence-Linux-amd64-v5.4.0/plugins -type f ! -name '*.tgz' -delete
+          find release/rss-intelligence-Linux-amd64-v5.4.1/plugins -type f ! -name '*.tgz' -delete
       - name: Bundle prebuilt images and corresponding project source
         shell: bash
         run: |
           set -euo pipefail
           docker pull freshrss/freshrss:1.27.1
-          docker save rss-intelligence:5.4.0 freshrss/freshrss:1.27.1 | gzip -1 > release/rss-intelligence-Linux-amd64-v5.4.0/rss-intelligence-images.tar.gz
-          cp compose.yaml DEPLOYMENT.md LICENSE THIRD_PARTY_NOTICES.md release/rss-intelligence-Linux-amd64-v5.4.0/
-          mkdir release/rss-intelligence-Linux-amd64-v5.4.0/sources
-          git archive HEAD | tar -x -C release/rss-intelligence-Linux-amd64-v5.4.0/sources
-          tar -cf release/rss-intelligence-Linux-amd64-v5.4.0.tar -C release rss-intelligence-Linux-amd64-v5.4.0
-          test "$(stat -c %s release/rss-intelligence-Linux-amd64-v5.4.0.tar)" -lt 2000000000
-          cd release && sha256sum rss-intelligence-Linux-amd64-v5.4.0.tar > SHA256SUMS.txt
+          docker save rss-intelligence:5.4.0 freshrss/freshrss:1.27.1 | gzip -1 > release/rss-intelligence-Linux-amd64-v5.4.1/rss-intelligence-images.tar.gz
+          cp compose.yaml DEPLOYMENT.md LICENSE THIRD_PARTY_NOTICES.md release/rss-intelligence-Linux-amd64-v5.4.1/
+          mkdir release/rss-intelligence-Linux-amd64-v5.4.1/sources
+          git archive HEAD | tar -x -C release/rss-intelligence-Linux-amd64-v5.4.1/sources
+          tar -cf release/rss-intelligence-Linux-amd64-v5.4.1.tar -C release rss-intelligence-Linux-amd64-v5.4.1
+          test "$(stat -c %s release/rss-intelligence-Linux-amd64-v5.4.1.tar)" -lt 2000000000
+          cd release && sha256sum rss-intelligence-Linux-amd64-v5.4.1.tar > SHA256SUMS.txt
       - name: Publish verified container download
         env:
           GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           set -euo pipefail
-          if ! gh release view v5.4.0 >/dev/null 2>&1; then
-            gh release create v5.4.0 --target "$GITHUB_SHA" --draft --title 'RSS 情报站 v5.4.0 · 已构建 Linux 运行包' --notes '下载 Linux-amd64 TAR，解压后执行 bash rss-runtime.sh load 导入已构建镜像，无需编译 Python/TypeScript 或安装应用依赖。包含 Python/Node、OpenClaw、两个编译后的插件、完整管线与 FreshRSS 镜像。已通过完整 Linux 回归和容器离线自检。需要 Linux amd64 + Docker；真实订阅、模型账户、域名/TLS 和宿主调度仍须按部署文档配置。'
+          if ! gh release view v5.4.1 >/dev/null 2>&1; then
+            gh release create v5.4.1 --target "$GITHUB_SHA" --draft --title 'RSS 情报站 v5.4.1 · 已构建 Linux 运行包' --notes '下载 Linux-amd64 TAR，解压后执行 bash rss-runtime.sh load 导入已构建镜像，无需编译 Python/TypeScript 或安装应用依赖。包含 Python/Node、OpenClaw、两个编译后的插件、完整管线与 FreshRSS 镜像。已通过完整 Linux 回归和容器离线自检。需要 Linux amd64 + Docker；真实订阅、模型账户、域名/TLS 和宿主调度仍须按部署文档配置。'
           fi
-          gh release upload v5.4.0 release/rss-intelligence-Linux-amd64-v5.4.0.tar release/SHA256SUMS.txt --clobber
-          gh release edit v5.4.0 --draft=false --latest
+          gh release upload v5.4.1 release/rss-intelligence-Linux-amd64-v5.4.1.tar release/SHA256SUMS.txt --clobber
+          gh release edit v5.4.1 --draft=false --latest
       - name: Add the runtime download to the project home page
         shell: bash
         run: |
@@ -80,7 +80,7 @@ jobs:
           python - <<'PY'
           from pathlib import Path
           p=Path('README.md');body=p.read_text(encoding='utf-8');first,sep,rest=body.partition('\n')
-          block='\n## 下载已构建运行包\n\n**[下载 Linux amd64 运行包 v5.4.0](https://github.com/TTTAAXXTTT/rss-intelligence/releases/download/v5.4.0/rss-intelligence-Linux-amd64-v5.4.0.tar)** · [校验与发布说明](https://github.com/TTTAAXXTTT/rss-intelligence/releases/tag/v5.4.0)\n\n包含预构建容器镜像、Python/Node/OpenClaw、已编译插件和 FreshRSS。解压后运行 `bash rss-runtime.sh load`，再执行 `bash rss-runtime.sh selftest`；无需编译或安装应用依赖。需要 Linux amd64 与 Docker；真实订阅、模型账户、域名和调度仍按部署说明配置。\n'
+          block='\n## 下载已构建运行包\n\n**[下载 Linux amd64 运行包 v5.4.1](https://github.com/TTTAAXXTTT/rss-intelligence/releases/download/v5.4.1/rss-intelligence-Linux-amd64-v5.4.1.tar)** · [校验与发布说明](https://github.com/TTTAAXXTTT/rss-intelligence/releases/tag/v5.4.1)\n\n包含预构建容器镜像、Python/Node/OpenClaw、已编译插件和 FreshRSS。解压后运行 `bash rss-runtime.sh load`，再执行 `bash rss-runtime.sh selftest`；无需编译或安装应用依赖。需要 Linux amd64 与 Docker；真实订阅、模型账户、域名和调度仍按部署说明配置。\n'
           if '## 下载已构建运行包' not in body:p.write_text(first+sep+block+rest,encoding='utf-8')
           PY
           git config user.name 'github-actions[bot]'
